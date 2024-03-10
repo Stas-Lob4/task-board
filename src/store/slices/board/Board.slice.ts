@@ -2,17 +2,21 @@ import { PayloadAction, createSlice } from '@reduxjs/toolkit'
 import { v4 as uuidv4 } from 'uuid'
 
 interface TaskI {
-	id: string
-	title: string
+	id: number;
+	title: string;
 }
 
 export interface ColumnI {
-	title: string
-	tasks: TaskI[]
+	title: string;
+	tasks: TaskI[];
+}
+
+export interface ColumnsI {
+	[x: string]: ColumnI;
 }
 
 export interface BoardStateI {
-	column: Record<string, ColumnI>
+	column: ColumnsI;
 }
 
 export const getInitialBoardState = () => {
@@ -52,7 +56,7 @@ export const boardSlice = createSlice({
 	name: 'board',
 	initialState,
 	reducers: {
-		updateColumns: (state, action: PayloadAction<Record<string, ColumnI>>) => {
+		updateColumns: (state, action: PayloadAction<ColumnsI>) => {
 			state.column = {
 				...state.column,
 				...action.payload
