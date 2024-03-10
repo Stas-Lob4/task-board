@@ -1,9 +1,10 @@
 import './App.css'
+import { Board } from './components/Board/board'
 
 function App() {
   return (
     <>
-      <h1>Task Board</h1>
+      <Board />
     </>
   )
 }

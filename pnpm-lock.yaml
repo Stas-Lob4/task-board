@@ -11,6 +11,9 @@ dependencies:
   '@types/react-beautiful-dnd':
     specifier: ^13.1.8
     version: 13.1.8
+  '@types/uuid':
+    specifier: ^9.0.8
+    version: 9.0.8
   react:
     specifier: ^18.2.0
     version: 18.2.0
@@ -23,6 +26,9 @@ dependencies:
   react-redux:
     specifier: ^9.1.0
     version: 9.1.0(@types/react@18.2.61)(react@18.2.0)(redux@5.0.1)
+  uuid:
+    specifier: ^9.0.1
+    version: 9.0.1
 
 devDependencies:
   '@types/react':
@@ -816,6 +822,10 @@ packages:
 
   /@types/use-sync-external-store@0.0.3:
     resolution: {integrity: sha512-EwmlvuaxPNej9+T4v5AuBPJa2x2UOJVdjCtDHgcDqitUeOtjnJKJ+apYjVcAoBEMjKW1VVFGZLUb5+qqa09XFA==}
+    dev: false
+
+  /@types/uuid@9.0.8:
+    resolution: {integrity: sha512-jg+97EGIcY9AGHJJRaaPVgetKDsrTgbRjQ5Msgjh/DQKEFl0DtyRr/VCOyD1T2R1MNeWPK/u7JoGhlDZnKBAfA==}
     dev: false
 
   /@typescript-eslint/eslint-plugin@7.1.0(@typescript-eslint/parser@7.1.0)(eslint@8.57.0)(typescript@5.3.3):
@@ -2073,6 +2083,11 @@ packages:
       react: ^16.8.0 || ^17.0.0 || ^18.0.0
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /uuid@9.0.1:
+    resolution: {integrity: sha512-b+1eJOlsR9K8HJpow9Ok3fiWOWSIcIzXodvv0rQjVoOVNpWMpxf1wZNpt4y9h10odCNrqnYp1OBzRktckBe3sA==}
+    hasBin: true
     dev: false
 
   /vite@5.1.4:
