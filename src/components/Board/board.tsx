@@ -34,7 +34,7 @@ export const Board: React.FC = () => {
 	return (
 		<DragDropContext onDragEnd={(result) => onDragEnd(result, columns)}>
 			<div>
-				{Object.entries(columns).map(([columnId, column], index) => {
+				{Object.entries(columns).map(([columnId, column]) => {
 					return (
 						<Droppable droppableId={columnId} key={columnId} >
 							{(provided) => {
