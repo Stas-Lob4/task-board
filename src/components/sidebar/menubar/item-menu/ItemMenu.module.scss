@@ -1,0 +1,13 @@
+.menu_item {
+	display: flex;
+	gap: 16px;
+	align-items: center;
+	.item_image {
+		display: flex;
+	}
+	.item_name {
+		font-size: 14px;
+		font-weight: semi-bold;
+		color: #1f2633;
+	}
+}
