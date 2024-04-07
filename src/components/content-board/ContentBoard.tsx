@@ -4,8 +4,7 @@ import AddButtonImage from "../assets/images/content/add_button.svg"
 import BoardViewImage from "../assets/images/content/board_view.svg"
 import ListViewImage from "../assets/images/content/list_view.svg"
 import SearchImage from "../assets/images/content/search_icon.svg"
-import MoreImage from "../assets/images/content/more_horiz.svg"
-import AddTaskImage from "../assets/images/content/add_task.svg"
+import { Board } from '../board/Board.tsx'
 
 export const ContentBoard = () => {
 	return (
@@ -57,37 +56,7 @@ export const ContentBoard = () => {
 					<input placeholder="Search Tasks" type="text" />
 				</div>
 			</div>
-			<div className={s.board_content}>
-				<div className={s.board_column}>
-					<div className={s.board_column_head}>
-						<div className={s.colunm_title}>
-							<div className={s.column_name}>Backlog Tasks</div>
-							<div className={s.column_count_1}>5</div>
-						</div>
-						<div className={s.column_menu}>
-							<img src={MoreImage} alt="menu_icon" />
-						</div>
-					</div>
-					<div className={s.board_column_tasks}>
-						<div className={s.task}>
-							<div className={s.header_task}>
-								<div className={s.title_task}>Task 1</div>
-							</div>
-							<div className={s.tags_task}>
-								<div className={s.task_tag_1}>#001</div>
-								<div className={s.task_tag_2}>Design</div>
-								<div className={s.task_tag_3}>backlog</div>
-							</div>
-							<div className={s.assignment_user}>
-								<img src={AvatarImage} alt="avatar" />
-							</div>
-						</div>
-						<div className={s.add_task}>
-							<img src={AddTaskImage} alt="add_task" />
-						</div>
-					</div>
-				</div>
-			</div>
+			<Board/>
 		</div>
 	);
 };

@@ -2,6 +2,7 @@
 	display: flex;
 	gap: 16px;
 	align-items: center;
+	cursor: pointer;
 	.item_image {
 		display: flex;
 	}
@@ -9,5 +10,10 @@
 		font-size: 14px;
 		font-weight: semi-bold;
 		color: #1f2633;
+	}
+	.active{
+		font-weight: bold;
+		background-color: #f2f4f7;
+		border-radius: 4px;
 	}
 }
