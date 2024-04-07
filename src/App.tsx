@@ -1,10 +1,10 @@
 import './App.css'
-import { Board } from './components/Board/board'
+import {Home} from './pages/Home.tsx';
 
 function App() {
   return (
     <>
-      <Board />
+      <Home/>
     </>
   )
 }
