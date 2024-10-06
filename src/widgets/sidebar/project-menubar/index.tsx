@@ -2,7 +2,7 @@ import { useDispatch, useSelector } from 'react-redux'
 
 import { AddCircle, Tag } from '@/shared/assets/images'
 import { updateSelectProject } from '@/store/slices/project/project.slice'
-import { getProjects, getSelectedProject } from '@/store/slices/project/selectors/project.selector'
+import { getProjects, getSelectedProject } from '@/store/slices/project/selectors/project.selectors'
 
 import { MenuBar } from '../menubar'
 import { ItemMenu } from '../menubar/item-menu'

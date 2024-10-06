@@ -49,7 +49,7 @@ export const Board = () => {
     <DragDropContext onDragEnd={result => onDragEnd(result, columns)}>
       <div className={s.board_content}>
         {Object.keys(columns).map(columnId => {
-          return <Column columnId={columnId} />
+          return <Column columnId={columnId} key={columnId} />
         })}
       </div>
     </DragDropContext>
