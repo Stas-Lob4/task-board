@@ -1,6 +1,6 @@
-import {configureStore} from '@reduxjs/toolkit'
-import boardReducer from './slices/board/Board.slice'
-import projectReducer from './slices/project/Project.slice.ts'
+import { boardReducer } from '@/store/slices/board/board.slice'
+import { projectReducer } from '@/store/slices/project/project.slice'
+import { configureStore } from '@reduxjs/toolkit'
 
 export const store = configureStore({
   reducer: {

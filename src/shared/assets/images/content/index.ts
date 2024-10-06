@@ -1,0 +1,7 @@
+export { default as Avatar } from './Avatar.png'
+export { default as AddButton } from './add_button.svg'
+export { default as AddTask } from './add_button.svg'
+export { default as BoardView } from './board_view.svg'
+export { default as ListView } from './list_view.svg'
+export { default as MoreHoriz } from './more_horiz.svg'
+export { default as SearchIcon } from './search_icon.svg'

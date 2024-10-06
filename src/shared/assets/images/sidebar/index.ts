@@ -1,0 +1,7 @@
+export { default as AddCircle } from './add_circle.svg'
+export { default as AvatarSidebar } from './avatar.png'
+export { default as ExpandLess } from './expand_less.svg'
+export { default as MenuOpen } from './menu_open.svg'
+export { default as Tag } from './tag.svg'
+export { default as Tune } from './tune.svg'
+export { default as UnfoldMore } from './unfold_more.svg'
